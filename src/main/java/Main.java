@@ -33,6 +33,12 @@ public class Main extends Application {
         // Create the SQL Query to fetch all the users from SQLite
         String userQuery = "SELECT * FROM Users";
         try {
+            try {
+                Class.forName("org.sqlite.JDBC");
+            } catch (ClassNotFoundException e) {
+                // TODO Auto-generated catch block
+                e.printStackTrace();
+            }
             // Define the path to the SQLite database
             String url = "jdbc:sqlite:src/main/java/db.db";
 

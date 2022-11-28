@@ -4,12 +4,16 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class User {
+
+    // Private Class Variables
     private Integer id;
     private String username;
     private String password;
     private String firstName;
     private List<Record> healthRecords = new ArrayList<Record>();
+    private String lastName;
 
+    // Constructor
     public User(Integer id, String username, String password, String firstName, String lastName) {
         this.username = username;
         this.password = password;
@@ -18,8 +22,7 @@ public class User {
         this.id = id;
     }
 
-    private String lastName;
-
+    // Getters
     public String getUsername() {
         return username;
     }
@@ -36,6 +39,15 @@ public class User {
         return lastName;
     }
 
+    public Integer getId() {
+        return id;
+    }
+
+    public List<Record> getHealthRecords() {
+        return healthRecords;
+    }
+
+    // Setters
     public void setUsername(String username) {
         this.username = username;
     }
@@ -52,20 +64,22 @@ public class User {
         this.lastName = lastName;
     }
 
-    public List<Record> getHealthRecords() {
-        return healthRecords;
-    }
-
+    /**
+     * Add record to the health records set
+     * 
+     * @param record record to add
+     */
     public void addHealthRecord(Record record) {
         this.healthRecords.add(record);
     }
 
+    /**
+     * Remove a health record from the records set
+     * 
+     * @param record record to remove
+     */
     public void removeHealthRecord(Record record) {
         this.healthRecords.remove(record);
-    }
-
-    public Integer getId() {
-        return id;
     }
 
 }

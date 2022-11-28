@@ -6,6 +6,8 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class Record {
+
+    // Private Class Variables
     private Integer id;
 
     private Integer weight;
@@ -13,34 +15,10 @@ public class Record {
     private String bloodPressureString;
     private Integer bloodPressureHigh;
     private Integer bloodPressureLow;
-
-    public String getBloodPressureString() {
-        return bloodPressureString;
-    }
-
-    public void setBloodPressureString(String bloodPressureString) {
-        this.bloodPressureString = bloodPressureString;
-    }
-
-    public Integer getBloodPressureHigh() {
-        return bloodPressureHigh;
-    }
-
-    public void setBloodPressureHigh(Integer bloodPressureHigh) {
-        this.bloodPressureHigh = bloodPressureHigh;
-    }
-
-    public Integer getBloodPressureLow() {
-        return bloodPressureLow;
-    }
-
-    public void setBloodPressureLow(Integer bloodPressureLow) {
-        this.bloodPressureLow = bloodPressureLow;
-    }
-
     private String note;
     private LocalDate recordDate;
 
+    // Constructor
     public Record(Integer id, Integer weight, Integer temperature, String bloodPressureString,
             Integer bloodPressureHigh,
             Integer bloodPressureLow, String note, LocalDate recordDate) {
@@ -54,16 +32,9 @@ public class Record {
         this.recordDate = recordDate;
     }
 
-    public LocalDate getRecordDate() {
-        return recordDate;
-    }
-
-    public void setRecordDate(LocalDate recordDate) {
-        this.recordDate = recordDate;
-    }
-
-    public void setWeight(Integer weight) {
-        this.weight = weight;
+    // Geters
+    public String getBloodPressureString() {
+        return bloodPressureString;
     }
 
     public Integer getWeight() {
@@ -82,6 +53,43 @@ public class Record {
         return bloodPressureString;
     }
 
+    public Integer getBloodPressureHigh() {
+        return bloodPressureHigh;
+    }
+
+    public Integer getBloodPressureLow() {
+        return bloodPressureLow;
+    }
+
+    public LocalDate getRecordDate() {
+        return recordDate;
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    // Setters
+    public void setBloodPressureString(String bloodPressureString) {
+        this.bloodPressureString = bloodPressureString;
+    }
+
+    public void setBloodPressureHigh(Integer bloodPressureHigh) {
+        this.bloodPressureHigh = bloodPressureHigh;
+    }
+
+    public void setBloodPressureLow(Integer bloodPressureLow) {
+        this.bloodPressureLow = bloodPressureLow;
+    }
+
+    public void setRecordDate(LocalDate recordDate) {
+        this.recordDate = recordDate;
+    }
+
+    public void setWeight(Integer weight) {
+        this.weight = weight;
+    }
+
     public void setBloodPressure(String bloodPressure) {
         this.bloodPressureString = bloodPressure;
     }
@@ -94,10 +102,10 @@ public class Record {
         this.note = note;
     }
 
-    public Integer getId() {
-        return id;
-    }
-
+    /**
+     * Helper method to create a stream of data for an individual Record Item
+     * @return
+     */
     public String toCSV() {
         return Stream
                 .of(this.recordDate.format(DateTimeFormatter.ofPattern("dd LLLL yyyy")), Integer.toString(this.weight),
