@@ -4,7 +4,7 @@ In a terminal use the `javac` command to compile this software. Note that the pa
 Ensure this command is run from the root directory of the project
 
 ```
-javac ./main/java/*.java --module-path /Users/jacobpyke/Downloads/javafx-sdk-17.0.0.1/lib --add-modules javafx.controls,javafx.fxml -classpath /Users/jacobpyke/Downloads/sqlite-jdbc-3.40.0.0.jar
+javac ./main/java/*.java --module-path /{PATHTOJAVAFX}/javafx-sdk-17.0.0.1/lib --add-modules javafx.controls,javafx.fxml -classpath /{PATHTOSQLITEJDBC}/sqlite-jdbc-3.40.0.0.jar
 ```
 
 # Running this software
@@ -21,3 +21,8 @@ java --module-path /{PATHTOJAVAFX}/javafx-sdk-17.0.0.1/lib --add-modules javafx.
 
 ## IDE
 Visual Studio Code - MacOS
+
+## Specfic to my machine
+javac ./main/java/*.java --module-path /Users/jacobpyke/Downloads/javafx-sdk-17.0.0.1/lib --add-modules javafx.controls,javafx.fxml -classpath /Users/jacobpyke/Downloads/sqlite-jdbc-3.40.0.0.jar
+
+javac ./main/java/*.java --module-path /Users/jacobpyke/Downloads/javafx-sdk-17.0.0.1/lib --add-modules javafx.controls,javafx.fxml -classpath /Users/jacobpyke/Downloads/sqlite-jdbc-3.40.0.0.jar
