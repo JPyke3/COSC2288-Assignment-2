@@ -1,7 +1,11 @@
 package main.java;
 
-public class Application {
+public class ApplicationBackend {
     private Database db;
+
+    public ApplicationBackend(Database db) {
+        this.db = db;
+    }
 
     public Database getDb() {
         return db;

@@ -10,6 +10,27 @@
         "/Users/jacobpyke/Development/javafx-sdk-19/lib/javafx.graphics.jar",
         "/Users/jacobpyke/Development/javafx-sdk-19/lib/javafx.media.jar",
         "/Users/jacobpyke/Development/javafx-sdk-19/lib/javafx.swing.jar",
-        "/Users/jacobpyke/Development/javafx-sdk-19/lib/javafx.web.jar"
+        "/Users/jacobpyke/Development/javafx-sdk-19/lib/javafx.web.jar",
+        "/Users/jacobpyke/Downloads/javafx-sdk-19/lib/javafx.base.jar",
+        "/Users/jacobpyke/Downloads/javafx-sdk-19/lib/javafx.controls.jar",
+        "/Users/jacobpyke/Downloads/javafx-sdk-19/lib/javafx.web.jar",
+        "/Users/jacobpyke/Downloads/javafx-sdk-19/lib/javafx.swing.jar",
+        "/Users/jacobpyke/Downloads/javafx-sdk-19/lib/javafx.graphics.jar",
+        "/Users/jacobpyke/Downloads/javafx-sdk-19/lib/javafx.media.jar",
+        "/Users/jacobpyke/Downloads/javafx-sdk-19/lib/javafx-swt.jar",
+        "/Users/jacobpyke/Downloads/javafx-sdk-19/lib/javafx.fxml.jar",
+        "/Users/jacobpyke/Downloads/javafx-sdk-17.0.0.1/lib/javafx.base.jar",
+        "/Users/jacobpyke/Downloads/javafx-sdk-17.0.0.1/lib/javafx.controls.jar",
+        "/Users/jacobpyke/Downloads/javafx-sdk-17.0.0.1/lib/javafx.web.jar",
+        "/Users/jacobpyke/Downloads/javafx-sdk-17.0.0.1/lib/javafx.swing.jar",
+        "/Users/jacobpyke/Downloads/javafx-sdk-17.0.0.1/lib/javafx.graphics.jar",
+        "/Users/jacobpyke/Downloads/javafx-sdk-17.0.0.1/lib/javafx.media.jar",
+        "/Users/jacobpyke/Downloads/javafx-sdk-17.0.0.1/lib/javafx-swt.jar",
+        "/Users/jacobpyke/Downloads/javafx-sdk-17.0.0.1/lib/javafx.fxml.jar",
+        "/Users/jacobpyke/Downloads/sqlite-jdbc-3.40.0.0.jar"
+    ],
+    "cSpell.words": [
+        "Initialise",
+        "jdbc"
     ]
 }
